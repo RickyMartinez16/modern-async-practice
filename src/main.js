@@ -10,7 +10,7 @@ async function update(constellation) {
     const url = `${BASE_URL}/constellations/${constellation.id}`;
     const result = await axios.put(url, constellation);
     return result;
-  } catch(err){
+  } catch(error){
     return `Updating constellation (id: ${id}) failed.`
   }
 }
