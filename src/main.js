@@ -1,6 +1,8 @@
 const axios = require("../utils/axios");
 const BASE_URL = "http://localhost:5000";
 
+
+//function to make sure the input is valid
 function isValid({ id, name, meaning, quadrant, starsWithPlanets }) {
   return id && name && meaning && quadrant && starsWithPlanets;
 }
